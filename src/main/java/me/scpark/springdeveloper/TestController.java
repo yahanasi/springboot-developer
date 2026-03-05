@@ -10,7 +10,6 @@ public class TestController{
     public String hello() {
         return "Hello World!";
     }
-
     @GetMapping("/student")
     public Student getStudent (@RequestParam("firstName") String firstName,@RequestParam("lastName") String lastName ){
         return new Student(firstName,lastName);
