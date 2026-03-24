@@ -12,4 +12,8 @@ public class TestService {
     public List<Member> getAllMembers(){
         return memberRespository.findAll();
     }
+
+    public Member saveMember(Member member){
+        return memberRespository.save(member);
+    }
 }
