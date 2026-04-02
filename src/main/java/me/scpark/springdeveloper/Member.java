@@ -27,6 +27,9 @@ public class Member {
     @Column(name = "name", nullable = false)
     private String name;
 
+    public void changeName(String name){
+        this.name=name;
+    }
     public Member(String name){
         this.name = name;
     }
