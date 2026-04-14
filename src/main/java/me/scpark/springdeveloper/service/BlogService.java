@@ -25,6 +25,6 @@ public class BlogService {
 
     public Article findById(long id){
         return blogRepository.findById(id)
-                .orElseThrow(()->new IllegalArgumentException("not found"));
+                .orElseThrow(()->new IllegalArgumentException("not found" + id));
     }
 }
